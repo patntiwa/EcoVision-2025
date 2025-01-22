@@ -1,0 +1,30 @@
+ /* Variables CSS globales pour une meilleure maintenabilité */
+ :root {
+    /* Couleurs */
+    --blue-claire-color: #3a86ff;
+    --blue-foncée-color: #002766;
+    --blue-sombre-color:#0b2238;
+    --orange-color: #fb5607;
+    --vert-color: #7bd88a;
+    /* Tailles de police */
+    --spacing-sm: 0.5rem;    /* 8px */
+    --spacing-md: 1rem;      /* 16px */
+    --spacing-lg: 2rem;      /* 32px */
+}
+
+/* Styles de base */
+*{
+    /* Applique la boîte de bordure à tous les éléments pour inclure le padding et la bordure dans la largeur et la hauteur totales */
+    box-sizing: border-box;
+    /* Réinitialise la marge par défaut de tous les éléments */
+    margin: 0;
+    /* Réinitialise le padding par défaut de tous les éléments */
+    padding: 0;
+    /* Définit la police par défaut pour tous les éléments */
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    width: min(1200px, 90%); /* Responsive : max 1200px ou 90% de la largeur */
+}
