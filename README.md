@@ -1,6 +1,6 @@
 # Projet EcoVision-2025
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) **Refonte du site web pour EcoVision par Digital Pro Solutions.**
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) **Refonte du site web pour EcoVision.**
 
 ## Description du Projet
 
