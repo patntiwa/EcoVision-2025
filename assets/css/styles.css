@@ -39,3 +39,7 @@
 body {
     width: min(1440px, 100%); /* Responsive : max 1440px ou 100% de la largeur */
 }
+
+section{
+background-color: var(--bg-grey);
+}
