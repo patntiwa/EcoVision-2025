@@ -2,8 +2,6 @@
  :root {
     /* Couleurs */
     --primary-color: #fb5607;
-    --yellow-color: #ffbe0b;
-    --pink-color: #ff006e;
     --blue-color-1: #3a86ff;
     --blue-color-2: #002766;
     --dark-color: #121725;
@@ -17,15 +15,12 @@
     --border-color-light: #eee;
     --nav-color: #0b2238;
     --dropdown-color: #fff;
-    --iframe-filter: grayscale(0%);
-    --bg-light: rgba(130, 115, 252, .05);
     --bg-grey: #f7f7f7;
     --footer-bg: #121725;
     --card-bg: #fff;
+
     /* Tailles de police */
-    --spacing-sm: 0.5rem;    /* 8px */
-    --spacing-md: 1rem;      /* 16px */
-    --spacing-lg: 2rem;      /* 32px */
+
 }
 
 /* Styles de base */
@@ -42,5 +37,5 @@
 }
 
 body {
-    width: min(1200px, 90%); /* Responsive : max 1200px ou 90% de la largeur */
+    width: min(1440px, 100%); /* Responsive : max 1440px ou 100% de la largeur */
 }
