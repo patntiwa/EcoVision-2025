@@ -36,49 +36,106 @@
     
 }
 
+.text-center{
+    text-align: center;
+}
+.titre-h1{
+    color: var(--heading-color);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: 574px;
+    height: 120px;
+    line-height: 1.2;
+}
+.titre-h2{
+    color: var(--heading-color);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.soustitre-h3{
+    color: var(--blue-color-1);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.titre-card{
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.content-gray{
+    color: var(--font-color);
+    font-size: 16px;
+}
+.titre-bleu-bold{
+    color: var(--blue-color-1);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: auto;
+    padding: 5px 0 5px;
+}
 main{
     width: 100%;
 }
 .container {
-    padding: 30px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 .bg-grey{
     background-color: var(--bg-grey);
 }
+.m-10{
+    margin: 10px;
+}
+.p-20{
+    padding: 20px 0px 20px;
+}
+.m-auto{
+    margin: auto;
+}
+.icon-center{
+    display: block; 
+    margin: auto;
+}
 .row{
     display: flex;
     justify-content: center;
     width: 90%;
-    margin: auto;
     gap: 10px;
 }
-.partie1-section1{
+.w-50{
     width: 50%;
     border: 1px solid  var(--dark-color); 
 }
-.partie2-session1{
-    width: 50%;
-    border: 1px solid  var(--primary-color); 
+
+.w-100{
+    width: 100%;
+    border: 1px solid red;
 }
-.partie1-section2{
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    border: 1px solid  var(--blue-color-1); 
-}
-.partie2-section2{
+.box-gap20{
     display: flex;
     gap: 20px;
-    width: 100%;
     justify-content: center;
-    margin: auto;
-    border: 1px solid red;
 }
 .card{
     background-color: var(--card-bg);
     border-radius: var(--border-radius);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 44px 25px 44px;
     margin: 20px 0;
+}
+
+.card-padding{
+    padding: 44px 25px 44px;
+}
+.card-w-h{
+    width: 407px;
+    height: 494px;
+}
+.img-card{
+    width: 407px;
+    height: 235px;
 }
