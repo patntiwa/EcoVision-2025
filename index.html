@@ -5,44 +5,558 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<header></header>
 <body>
+    <header>
+        <div class="container">
+            <nav class="navbar m-auto">
+                <!-- Logo du site -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/Logo.png" alt="Estates Logo">
+                    </a>
+                </div>
+                
+                <!-- Menu de navigation -->
+                <div id="nav-menu" class="nav-menu">
+                    <ul class="nav-list">
+                        <!-- Liens vers les pages principales -->
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="about.html">About</a></li>
+                        <li class="nav-item"><a href="services.html">Services</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                        
+                        <!-- Barre de recherche -->
+                        <li>
+                            <form class="search-bar">
+                                <input type="search" name="search" placeholder="Search here.." required>
+                                <span class="search-icon"></span>
+                            </form>
+                        </li>
+                    </ul>
+                    
+                    <!-- Bouton d'enquête -->
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#btn" class="btn-enquire">Enquire Here</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Icône pour activer le mode nuit -->
+                <div class="theme-toggle">
+                    <img src="assets/Images/Moon Icon.png" alt="Night Mode">
+                </div>
+            </nav>
+        </div>
+    </header>
+    
     <div class="main">
-        <section class="section1">
-            <div class="partie1-section1"></div>
-            <div class="partie2-session1"></div>
+        <section class="container bg-grey">
+            <div class="row m-auto">
+                <div class="w-50">
+                    <h3 class="soustitre-h3">A Higher Quality OF Living</h3>
+                    <h1 class="titre-h1">The ideal space to balance Life, Work And Play.</h1>
+                    <p class="content-gray">Semper at. Lorem ipsum dolor sit amet elit elit. Non quae, ad esse et.</p>
+                    <div class="group-btn">
+                        <button type="button" class="btn-orange">Get Started <img src="assets/Images/Arrow Right Sm.png" alt="direction right"></button>
+                        <button type="button" class="btn-blue">Contact Us <img src="assets/Images/Arrow Right Sm.png" alt="direction right"></button>
+                    </div>
+                </div>
+                <div class="w-50">
+                    <img src="assets/Images/1.png" alt="Building">
+                </div>
+            </div>
+            
         </section>
-
-        <section class="section2">
-            <div class="partie1-section2"></div>
-            <div class="partie2-section2"></div>
+        
+        <section class="container">
+            <div class="partie1-section2 text-center">
+                <h3 class="soustitre-h3">Our services</h3>
+                <h2 class="titre-h2">We Provide Great Services</h2>
+            </div>
+            <div class="row m-auto">
+                <div class="box-gap20 w-100">
+                    <div class="card card-padding">
+                        <img src="assets/Images/Design Icon 1.png" alt="Design" class="icon-center">
+                        <p class="titre-card text-center m-10">Design</p>
+                        <p class="content-gray text-center">Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet.</p>
+                    </div>
+                    <div class="card card-padding">
+                        <img src="assets/Images/Stategy Icon.png" alt="Building" class="icon-center">
+                        <p class="titre-card text-center m-10">Stategy</p>
+                        <p class="content-gray text-center">Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet.</p>
+                    </div>
+                    <div class="card card-padding">
+                        <img src="assets/Images/Marketing Icon.png" alt="Building" class="icon-center">
+                        <p class="titre-card text-center m-10">Marketing</p>
+                        <p class="content-gray text-center">Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non. Duis sed et dolor amet.</p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
-
-        <section class="section3">
-            <div class="partie1-section3"></div>
-            <div class="partie2-section3"></div>
+        
+        <section class="container">
+            <div class="row m-auto">            
+                <div class="w-50">
+                    <img src="assets/Images/2.png" alt="Construction">
+                </div>
+                <div class="w-50">
+                    
+                    <h3 class="soustitre-h3 m-10">Explore</h3>
+                    <h2 class="titre-h2 m-10">Explore By Property Type</h2>
+                    <p class="content-gray m-10 p-20">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
+                    
+                    <div class="box-gap20 m-10">
+                        <div class="card-group-item w-50">
+                            <p class="titre-card m-10">Office</p>
+                            <p class="content-gray-left m-10">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                        </div>
+                        <div class="card-group-item w-50">
+                            <p class="titre-card m-10">House</p>
+                            <p class="content-gray-left m-10">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                        </div>
+                    </div>
+                    <div class="box-gap20 m-10">    
+                        <div class="card-group-item w-50">
+                            <p class="titre-card m-10">Villa</p>
+                            <p class="content-gray-left m-10">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                        </div>
+                        <div class="card-group-item w-50">
+                            <p class="titre-card m-10">Apportment</p>
+                            <p class="content-gray-left m-10">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
         </section>
-
-        <section class="section4">
-            <div class="partie1-section4"></div>
-            <div class="partie2-section4"></div>
+        
+        <section class="container"> 
+            <div class="partie1-section4 text-center">
+                <h3 class="soustitre-h3">Available</h3>
+                <h2 class="titre-h2">Properties For Rent</h2>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="card card-w-h">
+                        <img src="assets/Images/g4 1.png" alt="Park Avenue Apartment" class="img-card">
+                        <p class="titre-card m-10">Park avenue apartment</p>
+                        <p class="titre-bleu-bold m-10">$ 440/month</p>
+                        <p class="content-gray m-10">Nulla ex nunc, interdum nec egestas nec, dapibus ac mauris. Vivamus id tempor nisl.</p>
+                        <ul>
+                            <li><span class="fa fa-bed"></span> 3</li>
+                            <li><span class="fa fa-bath"></span> 3</li>
+                            <li><span class="fa fa-share-square-o"></span> 1200 sq ft</li>
+                        </ul> 
+                    </div>
+                    <div class="card card-w-h">
+                        <img src="assets/Images/g4 1.png" alt="Park Avenue Apartment" class="img-card">
+                        <p class="titre-card m-10">Park avenue apartment</p>
+                        <p class="titre-bleu-bold m-10">$ 640/month</p>
+                        <p class="content-gray m-10">Nulla ex nunc, interdum nec egestas nec, dapibus ac mauris. Vivamus id tempor nisl.</p>
+                        <ul>
+                            <li><span class="fa fa-bed"></span> 3</li>
+                            <li><span class="fa fa-bath"></span> 3</li>
+                            <li><span class="fa fa-share-square-o"></span> 1200 sq ft</li>
+                        </ul> 
+                    </div>
+                    <div class="card card-w-h">
+                        <img src="assets/Images/g4 1.png" alt="Park Avenue Apartment" class="img-card">
+                        <p class="titre-card m-10">Park avenue apartment</p>
+                        <p class="titre-bleu-bold m-10">$ 840/month</p>
+                        <p class="content-gray m-10">Nulla ex nunc, interdum nec egestas nec, dapibus ac mauris. Vivamus id tempor nisl.</p>
+                        <ul>
+                            <li><span class="fa fa-bed"></span> 3</li>
+                            <li><span class="fa fa-bath"></span> 3</li>
+                            <li><span class="fa fa-share-square-o"></span> 1200 sq ft</li>
+                        </ul> 
+                    </div>
+                </div>
+                <!-- Boutons de navigation -->
+                <div class="carousel-dots">
+                    <span class="dot" onclick="moveSlide(0)"></span>
+                    <span class="dot" onclick="moveSlide(1)"></span>
+                    <span class="dot" onclick="moveSlide(2)"></span>
+                </div>
+            </div>
         </section>
-
-        <section class="section5">
-            <div class="partie1-session5"></div>
+        
+        <!-- Section des statistiques -->
+        <section class="statistics">
+            <div class="container">
+                <div class="statistics-grid">
+                    <!-- Statistique : Propriétés totales -->
+                    <div class="statistic">
+                        <h3 class="statistic-number">3450+</h3>
+                        <p class="statistic-label">Total Properties</p>
+                    </div>
+                    
+                    <!-- Statistique : Agences de confiance -->
+                    <div class="statistic">
+                        <h3 class="statistic-number">1700+</h3>
+                        <p class="statistic-label">Trusted Agencies</p>
+                    </div>
+                    
+                    <!-- Statistique : Acheteurs satisfaits -->
+                    <div class="statistic">
+                        <h3 class="statistic-number">2200+</h3>
+                        <p class="statistic-label">Happy Buyers</p>
+                    </div>
+                    
+                    <!-- Statistique : Agents totaux -->
+                    <div class="statistic">
+                        <h3 class="statistic-number">3270+</h3>
+                        <p class="statistic-label">Total Agents</p>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <section class="section6">
-            <div class="partie1-section6"></div>
-            <div class="partie2-section6"></div>
-            <div class="partie3-section6"></div>
-        </section>
-
-        <section class="section7">
-            <div class="partie1-section7"></div>
-            <div class="partie2-section7"></div>
+        <!-- Section des articles de blog -->
+        <section class="blog">
+            <div class="container">
+                <div class="blog-content">
+                    <!-- Colonne de gauche avec article principal -->
+                    <div class="blog-main">
+                        <h2 class="subtitle">Explore</h2>
+                        <h3 class="title">Blog Posts</h3>
+                        <p class="description">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis.</p>
+                        
+                        <!-- Article vedette -->
+                        <div class="featured-article">
+                            <a href="#">
+                                <img src="assets/images/g2.jpg" alt="Article vedette">
+                            </a>
+                            <div class="article-info">
+                                <time class="date">Dec 30, 2020</time>
+                                <h4>
+                                    <a href="#">What you need to know when choosing balcony</a>
+                                </h4>
+                                <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Colonne de droite avec articles secondaires -->
+                    <div class="blog-secondary">
+                        <!-- Première rangée d'articles -->
+                        <div class="article-group">
+                            <!-- Article 1 -->
+                            <article class="article">
+                                <a href="#">
+                                    <img src="assets/images/g3.jpg" alt="Article 1">
+                                </a>
+                                <div class="article-info">
+                                    <time class="date">Dec 31, 2020</time>
+                                    <h4>
+                                        <a href="#">The ultimate guide to find a flat in your area</a>
+                                    </h4>
+                                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 2 -->
+                            <article class="article">
+                                <img src="assets/images/g4.jpg" alt="Article 2">
+                                <div class="article-info">
+                                    <time class="date">Dec 31, 2020</time>
+                                    <h4>
+                                        <a href="#">The ultimate guide to find a flat in your area</a>
+                                    </h4>
+                                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <!-- Deuxième rangée d'articles -->
+                        <div class="article-group">
+                            <!-- Article 3 -->
+                            <article class="article">
+                                <a href="#">
+                                    <img src="assets/images/g5.jpg" alt="Article 3">
+                                </a>
+                                <div class="article-info">
+                                    <time class="date">Dec 31, 2020</time>
+                                    <h4>
+                                        <a href="#">The ultimate guide to find a flat in your area</a>
+                                    </h4>
+                                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 4 -->
+                            <article class="article">
+                                <a href="#">
+                                    <img src="assets/images/g1.jpg" alt="Article 4">
+                                </a>
+                                <div class="article-info">
+                                    <time class="date">Dec 31, 2020</time>
+                                    <h4>
+                                        <a href="#">The ultimate guide to find a flat in your area</a>
+                                    </h4>
+                                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
+</div>
+<!-- Section des caractéristiques principales -->
+<section class="features">
+    <div class="features-container">
+        <div class="container">
+            <!-- En-tête de la section -->
+            <div class="section-header text-center">
+                <h2 class="subtitle">Why choose us</h2>
+                <h3 class="title">We have the most listings <br>& constant updates.</h3>
+            </div>
+            
+            <!-- Grille des caractéristiques -->
+            <div class="features-grid">
+                <!-- Caractéristique : Acheter une maison -->
+                <div class="feature">
+                    <div class="feature-icon">
+                        <span class="icon briefcase"></span>
+                    </div>
+                    <div class="feature-content">
+                        <h4><a href="#">Buy a new home</a></h4>
+                        <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere.</p>
+                    </div>
+                </div>
+                
+                <!-- Caractéristique : Voir une maison -->
+                <div class="feature">
+                    <div class="feature-icon">
+                        <span class="icon eye"></span>
+                    </div>
+                    <div class="feature-content">
+                        <h4><a href="#">See a home</a></h4>
+                        <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere.</p>
+                    </div>
+                </div>
+                
+                <!-- Caractéristique : Louer une maison -->
+                <div class="feature">
+                    <div class="feature-icon">
+                        <span class="icon renren"></span>
+                    </div>
+                    <div class="feature-content">
+                        <h4><a href="#">Rent a home</a></h4>
+                        <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section des FAQ (Foire Aux Questions) -->
+<section class="faq">
+    <!-- Conteneur principal -->
+    <div class="container">
+        <div class="content">
+            <!-- Section image illustrative -->
+            <div class="image">
+                <img src="assets/images/9.png" alt="FAQ illustration">
+            </div>
+            
+            <!-- Section de texte et contenu -->
+            <div class="text">
+                <!-- Sous-titre et titre de la section -->
+                <h2 class="subtitle">FaQs</h2>
+                <h3 class="title">Experts with experience</h3>
+                <p class="description">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis.</p>
+                
+                <!-- Accordéon des questions fréquentes -->
+                <div class="accordion">
+                    <ul class="list">
+                        <!-- Première question -->
+                        <li class="item">
+                            <input type="checkbox" checked>
+                            <h4 class="question">Sed ut perspiciatis unde omnis?</h4>
+                            <p class="answer">Sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam.</p>
+                        </li>
+                        
+                        <!-- Deuxième question -->
+                        <li class="item">
+                            <input type="checkbox" checked>
+                            <h4 class="question">At vero eos iusto odio ducimus qui?</h4>
+                            <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit.</p>
+                        </li>
+                        
+                        <!-- Troisième question -->
+                        <li class="item">
+                            <input type="checkbox" checked>
+                            <h4 class="question">We denounce with righteous?</h4>
+                            <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section des témoignages clients -->
+<section class="testimonials">
+    <div class="testimonials-container">
+        <div class="container">
+            <!-- Conteneur du carrousel de témoignages -->
+            <div class="testimonials-carousel">
+                <!-- Témoignage 1 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <a href="#" class="testimonial-image">
+                            <img src="assets/images/team1.jpg" alt="Portrait de Johnson william">
+                        </a>
+                        
+                        <blockquote>
+                            <q>OMG! I cannot believe. It's Awesome</q>
+                        </blockquote>
+                        
+                        <p class="testimonial-text">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success.</p>
+                        
+                        <div class="testimonial-author">
+                            <h3>Johnson william</h3>
+                            <p class="author-role">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 2 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <a href="#" class="testimonial-image">
+                            <img src="assets/images/team2.jpg" alt="Portrait de Alexander sakura">
+                        </a>
+                        
+                        <blockquote>
+                            <q>Simply the best. Better than all the rest.</q>
+                        </blockquote>
+                        
+                        <p class="testimonial-text">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success.</p>
+                        
+                        <div class="testimonial-author">
+                            <h3>Alexander sakura</h3>
+                            <p class="author-role">Digital Marketer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 3 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <a href="#" class="testimonial-image">
+                            <img src="assets/images/team3.jpg" alt="Portrait de John wilson">
+                        </a>
+                        
+                        <blockquote>
+                            <q>OMG! I cannot believe. It's Awesome</q>
+                        </blockquote>
+                        
+                        <p class="testimonial-text">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success.</p>
+                        
+                        <div class="testimonial-author">
+                            <h3>John wilson</h3>
+                            <p class="author-role">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 4 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <a href="#" class="testimonial-image">
+                            <img src="assets/images/team4.jpg" alt="Portrait de Julia sakura">
+                        </a>
+                        
+                        <blockquote>
+                            <q>OMG! I cannot believe. It's Awesome</q>
+                        </blockquote>
+                        
+                        <p class="testimonial-text">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success.</p>
+                        
+                        <div class="testimonial-author">
+                            <h3>Julia sakura</h3>
+                            <p class="author-role">Digital Marketer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <!-- Conteneur principal du pied de page -->
+    <div>
+        <div>
+            <div>
+                <!-- Section de contact -->
+                <address>
+                    <h2>Contact</h2>
+                    <p>Lorem ipsum dolor sit amet elit. Velit beatae ullam dolore.</p>
+                    <ul>
+                        <li><a href="#">exemple@email.com</a></li>
+                        <li><a href="#">+(21) 255 989 8088</a></li>
+                    </ul>
+                    
+                    <!-- Navigation des réseaux sociaux -->
+                    <nav>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </nav>
+                </address>
+                
+                <!-- Navigation des recherches populaires -->
+                <nav>
+                    <h2>Recherches populaires</h2>
+                    <ul>
+                        <li><a href="#">Caractéristiques</a></li>
+                        <li><a href="#">Bureaux à louer</a></li>
+                        <li><a href="#">Dernières actualités</a></li>
+                        <li><a href="#">Bureaux à acheter</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Navigation des liens rapides -->
+                <nav>
+                    <h2>Liens rapides</h2>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Rejoindre l'équipe</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                        <li><a href="#">Communiqués</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Section d'abonnement à la newsletter -->
+                <section>
+                    <h2>Abonnez-vous à notre newsletter</h2>
+                    <p>Entrez votre email et recevez les dernières actualités.</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Votre adresse email" required>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+        
+        <!-- Section du copyright -->
+        <div>
+            <small>© 2020 Estates. Tous droits réservés | Conçu par <a href="#">W3layouts</a></small>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
