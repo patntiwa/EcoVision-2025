@@ -5,49 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<header></header>
 <body>
     <header>
         <div class="container">
-            <nav>
-                <a href="index.html">
-                    <img src="assets/images/Logo.png" alt="Logo Estates">
-                </a>
-                <div id="menu">
-                    <ul>
+            <nav class="navbar m-auto">
+                <!-- Logo du site -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/Logo.png" alt="Estates Logo">
+                    </a>
+                </div>
+                
+                <!-- Menu de navigation -->
+                <div id="nav-menu" class="nav-menu">
+                    <ul class="nav-list">
+                        <!-- Liens vers les pages principales -->
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="about.html">About</a></li>
+                        <li class="nav-item"><a href="services.html">Services</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                        
+                        <!-- Barre de recherche -->
                         <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="services.html">Services</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                        <li>
-                            <form>
+                            <form class="search-bar">
                                 <input type="search" name="search" placeholder="Search here.." required>
-                                <span></span>
+                                <span class="search-icon"></span>
                             </form>
                         </li>
                     </ul>
-                    <ul>
-                        <li>
-                            <a href="#btn">Enquire Here</a>
+                    
+                    <!-- Bouton d'enquête -->
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#btn" class="btn-enquire">Enquire Here</a>
                         </li>
                     </ul>
                 </div>
-                <div class="mobile-position">
-                    <img src="assets/Images/Moon Icon.png" alt="Icon mode nuit">
+                
+                <!-- Icône pour activer le mode nuit -->
+                <div class="theme-toggle">
+                    <img src="assets/Images/Moon Icon.png" alt="Night Mode">
                 </div>
             </nav>
         </div>
     </header>
+    
     <div class="main">
         <section class="container bg-grey">
             <div class="row m-auto">
@@ -121,7 +126,7 @@
                             <p class="content-gray-left m-10">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
                         </div>
                         <div class="card-group-item w-50">
-                            <p class="titre-card m-10">apportment</p>
+                            <p class="titre-card m-10">Apportment</p>
                             <p class="content-gray-left m-10">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
                         </div>
                     </div>
@@ -131,13 +136,13 @@
             
         </section>
         
-        <section class="container">
+        <section class="container"> 
             <div class="partie1-section4 text-center">
                 <h3 class="soustitre-h3">Available</h3>
                 <h2 class="titre-h2">Properties For Rent</h2>
             </div>
-            <div class="row m-auto ">
-                <div class="box-gap20">
+            <div class="carousel-container">
+                <div class="carousel-track">
                     <div class="card card-w-h">
                         <img src="assets/Images/g4 1.png" alt="Park Avenue Apartment" class="img-card">
                         <p class="titre-card m-10">Park avenue apartment</p>
@@ -148,7 +153,7 @@
                             <li><span class="fa fa-bath"></span> 3</li>
                             <li><span class="fa fa-share-square-o"></span> 1200 sq ft</li>
                         </ul> 
-                    </div> 
+                    </div>
                     <div class="card card-w-h">
                         <img src="assets/Images/g4 1.png" alt="Park Avenue Apartment" class="img-card">
                         <p class="titre-card m-10">Park avenue apartment</p>
@@ -159,7 +164,7 @@
                             <li><span class="fa fa-bath"></span> 3</li>
                             <li><span class="fa fa-share-square-o"></span> 1200 sq ft</li>
                         </ul> 
-                    </div> 
+                    </div>
                     <div class="card card-w-h">
                         <img src="assets/Images/g4 1.png" alt="Park Avenue Apartment" class="img-card">
                         <p class="titre-card m-10">Park avenue apartment</p>
@@ -171,143 +176,387 @@
                             <li><span class="fa fa-share-square-o"></span> 1200 sq ft</li>
                         </ul> 
                     </div>
-                    
                 </div>
-                <div class="partie2-section4">
-                    
+                <!-- Boutons de navigation -->
+                <div class="carousel-dots">
+                    <span class="dot" onclick="moveSlide(0)"></span>
+                    <span class="dot" onclick="moveSlide(1)"></span>
+                    <span class="dot" onclick="moveSlide(2)"></span>
                 </div>
-            </section>
-            
-            <section class="container">
-                <div class="row m-auto">
+            </div>
+        </section>
+        
+        <!-- Section des statistiques -->
+        <section class="statistics">
+            <div class="container">
+                <div class="statistics-grid">
+                    <!-- Statistique : Propriétés totales -->
+                    <div class="statistic">
+                        <h3 class="statistic-number">3450+</h3>
+                        <p class="statistic-label">Total Properties</p>
+                    </div>
                     
-                    <div class="">
-                        <div class="single-fact">
-                            <h3 class="counter-text">3450+</h3>
-                            <p class="mb-0">Total Properties</p>
-                        </div>
+                    <!-- Statistique : Agences de confiance -->
+                    <div class="statistic">
+                        <h3 class="statistic-number">1700+</h3>
+                        <p class="statistic-label">Trusted Agencies</p>
                     </div>
-                    <div class="">
-                        <div class="single-fact">
-                            <h3 class="counter-text">
-                                1700+
-                            </h3>
-                            <p class="mb-0">Trusted Agencies
-                                
-                            </p>
-                        </div>
+                    
+                    <!-- Statistique : Acheteurs satisfaits -->
+                    <div class="statistic">
+                        <h3 class="statistic-number">2200+</h3>
+                        <p class="statistic-label">Happy Buyers</p>
                     </div>
-                    <div class="">
-                        <div class="single-fact">
-                            <h3 class="counter-text">
-                                2200+
-                            </h3>
-                            <p class="mb-0">Happy Buyers</p>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="single-fact">
-                            <h3 class="counter-text">
-                                3270+
-                            </h3>
-                            <p class="mb-0">Total Agents</p>
-                        </div>
+                    
+                    <!-- Statistique : Agents totaux -->
+                    <div class="statistic">
+                        <h3 class="statistic-number">3270+</h3>
+                        <p class="statistic-label">Total Agents</p>
                     </div>
                 </div>
-            </section>
-            
-            <section class="container">
-                <div class="row">
-                    <!--/w3l-news-block-->
-                    
-                    <div class="row">
-                        <div class="col-lg-4 news-left">
-                            <h6 class="soustitre-h3">Explore</h6>
-                            <h3 class="titre-h2">
-                                Blog Posts</h3>
-                                <p class="content-gray"> Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
-                                </p>
-                                <div class="#">
-                                    <a href="blog-single.html"><img src="assets/images/g2.jpg" alt="" class="#"></a>
-                                    <div class="#">
-                                        <h6 class="date">Dec 30, 2020
-                                            
-                                        </h6>
-                                        <h4>
-                                            <a href="blog-single.html" class="news-link">What you need to know when choosing balcony</a>
-                                        </h4>
-                                        <p class="">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="#">
-                                <div class="row">
-                                    <div class="col-md-6 news-gd-1 mt-lg-5 pt-lg-5 px-lg-4">
-                                        <div class="w3l-news-gd mb-5">
-                                            <a href="blog-single.html"><img src="assets/images/g3.jpg" alt="" class="radius-image img-fluid"></a>
-                                            <div class="w3l-news-gd-inf mt-4">
-                                                <h6 class="date">Dec 31, 2020
-                                                    
-                                                </h6>
-                                                <h4>
-                                                    <a href="blog-single.html" class="news-link">The ultimate guide to find a flat in your area</a>
-                                                </h4>
-                                                <p class="">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
-                                            </div>
-                                        </div>
-                                        <div class="w3l-news-gd mb-5">
-                                            <img src="assets/images/g4.jpg" alt="" class="radius-image img-fluid">
-                                            <div class="w3l-news-gd-inf mt-4">
-                                                <h6 class="date">Dec 31, 2020
-                                                    
-                                                </h6>
-                                                <h4>
-                                                    <a href="blog-single.html" class="news-link">The ultimate guide to find a flat in your area</a>
-                                                </h4>
-                                                <p class="">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 news-gd-1 px-lg-4">
-                                        <div class="w3l-news-gd mb-5">
-                                            <a href="blog-single.html"><img src="assets/images/g5.jpg" alt="" class="radius-image img-fluid"></a>
-                                            <div class="w3l-news-gd-inf mt-4">
-                                                <h6 class="date">Dec 31, 2020
-                                                    
-                                                </h6>
-                                                <h4>
-                                                    <a href="" class="news-link">The ultimate guide to find a flat in your area</a>
-                                                </h4>
-                                                <p class="">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
-                                            </div>
-                                        </div>
-                                        <div class="w3l-news-gd mb-5">
-                                            <a href=""><img src="assets/images/g1.jpg" alt="" class="radius-image img-fluid"></a>
-                                            <div class="w3l-news-gd-inf mt-4">
-                                                <h6 class="date">Dec 31, 2020
-                                                    
-                                                </h6>
-                                                <h4>
-                                                    <a href="" class="news-link">The ultimate guide to find a flat in your area</a>
-                                                </h4>
-                                                <p class="">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+            </div>
+        </section>
+        <!-- Section des articles de blog -->
+        <section class="blog">
+            <div class="container">
+                <div class="blog-content">
+                    <!-- Colonne de gauche avec article principal -->
+                    <div class="blog-main">
+                        <h2 class="subtitle">Explore</h2>
+                        <h3 class="title">Blog Posts</h3>
+                        <p class="description">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis.</p>
+                        
+                        <!-- Article vedette -->
+                        <div class="featured-article">
+                            <a href="#">
+                                <img src="assets/images/g2.jpg" alt="Article vedette">
+                            </a>
+                            <div class="article-info">
+                                <time class="date">Dec 30, 2020</time>
+                                <h4>
+                                    <a href="#">What you need to know when choosing balcony</a>
+                                </h4>
+                                <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
                             </div>
                         </div>
-                        <!--//w3l-news-block-->
                     </div>
-                    <div class="partie2-section6"></div>
-                    <div class="partie3-section6"></div>
-                </section>
+                    
+                    <!-- Colonne de droite avec articles secondaires -->
+                    <div class="blog-secondary">
+                        <!-- Première rangée d'articles -->
+                        <div class="article-group">
+                            <!-- Article 1 -->
+                            <article class="article">
+                                <a href="#">
+                                    <img src="assets/images/g3.jpg" alt="Article 1">
+                                </a>
+                                <div class="article-info">
+                                    <time class="date">Dec 31, 2020</time>
+                                    <h4>
+                                        <a href="#">The ultimate guide to find a flat in your area</a>
+                                    </h4>
+                                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 2 -->
+                            <article class="article">
+                                <img src="assets/images/g4.jpg" alt="Article 2">
+                                <div class="article-info">
+                                    <time class="date">Dec 31, 2020</time>
+                                    <h4>
+                                        <a href="#">The ultimate guide to find a flat in your area</a>
+                                    </h4>
+                                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <!-- Deuxième rangée d'articles -->
+                        <div class="article-group">
+                            <!-- Article 3 -->
+                            <article class="article">
+                                <a href="#">
+                                    <img src="assets/images/g5.jpg" alt="Article 3">
+                                </a>
+                                <div class="article-info">
+                                    <time class="date">Dec 31, 2020</time>
+                                    <h4>
+                                        <a href="#">The ultimate guide to find a flat in your area</a>
+                                    </h4>
+                                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 4 -->
+                            <article class="article">
+                                <a href="#">
+                                    <img src="assets/images/g1.jpg" alt="Article 4">
+                                </a>
+                                <div class="article-info">
+                                    <time class="date">Dec 31, 2020</time>
+                                    <h4>
+                                        <a href="#">The ultimate guide to find a flat in your area</a>
+                                    </h4>
+                                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- Section des caractéristiques principales -->
+<section class="features">
+    <div class="features-container">
+        <div class="container">
+            <!-- En-tête de la section -->
+            <div class="section-header text-center">
+                <h2 class="subtitle">Why choose us</h2>
+                <h3 class="title">We have the most listings <br>& constant updates.</h3>
+            </div>
+            
+            <!-- Grille des caractéristiques -->
+            <div class="features-grid">
+                <!-- Caractéristique : Acheter une maison -->
+                <div class="feature">
+                    <div class="feature-icon">
+                        <span class="icon briefcase"></span>
+                    </div>
+                    <div class="feature-content">
+                        <h4><a href="#">Buy a new home</a></h4>
+                        <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere.</p>
+                    </div>
+                </div>
                 
-                <section class="container">
-                    <div class="partie1-section7"></div>
-                    <div class="partie2-section7"></div>
+                <!-- Caractéristique : Voir une maison -->
+                <div class="feature">
+                    <div class="feature-icon">
+                        <span class="icon eye"></span>
+                    </div>
+                    <div class="feature-content">
+                        <h4><a href="#">See a home</a></h4>
+                        <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere.</p>
+                    </div>
+                </div>
+                
+                <!-- Caractéristique : Louer une maison -->
+                <div class="feature">
+                    <div class="feature-icon">
+                        <span class="icon renren"></span>
+                    </div>
+                    <div class="feature-content">
+                        <h4><a href="#">Rent a home</a></h4>
+                        <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section des FAQ (Foire Aux Questions) -->
+<section class="faq">
+    <!-- Conteneur principal -->
+    <div class="container">
+        <div class="content">
+            <!-- Section image illustrative -->
+            <div class="image">
+                <img src="assets/images/9.png" alt="FAQ illustration">
+            </div>
+            
+            <!-- Section de texte et contenu -->
+            <div class="text">
+                <!-- Sous-titre et titre de la section -->
+                <h2 class="subtitle">FaQs</h2>
+                <h3 class="title">Experts with experience</h3>
+                <p class="description">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis.</p>
+                
+                <!-- Accordéon des questions fréquentes -->
+                <div class="accordion">
+                    <ul class="list">
+                        <!-- Première question -->
+                        <li class="item">
+                            <input type="checkbox" checked>
+                            <h4 class="question">Sed ut perspiciatis unde omnis?</h4>
+                            <p class="answer">Sit amet consectetur adipisicing elit. Voluptates amet earum velit nobis aliquam.</p>
+                        </li>
+                        
+                        <!-- Deuxième question -->
+                        <li class="item">
+                            <input type="checkbox" checked>
+                            <h4 class="question">At vero eos iusto odio ducimus qui?</h4>
+                            <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum velit.</p>
+                        </li>
+                        
+                        <!-- Troisième question -->
+                        <li class="item">
+                            <input type="checkbox" checked>
+                            <h4 class="question">We denounce with righteous?</h4>
+                            <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates amet earum.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section des témoignages clients -->
+<section class="testimonials">
+    <div class="testimonials-container">
+        <div class="container">
+            <!-- Conteneur du carrousel de témoignages -->
+            <div class="testimonials-carousel">
+                <!-- Témoignage 1 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <a href="#" class="testimonial-image">
+                            <img src="assets/images/team1.jpg" alt="Portrait de Johnson william">
+                        </a>
+                        
+                        <blockquote>
+                            <q>OMG! I cannot believe. It's Awesome</q>
+                        </blockquote>
+                        
+                        <p class="testimonial-text">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success.</p>
+                        
+                        <div class="testimonial-author">
+                            <h3>Johnson william</h3>
+                            <p class="author-role">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 2 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <a href="#" class="testimonial-image">
+                            <img src="assets/images/team2.jpg" alt="Portrait de Alexander sakura">
+                        </a>
+                        
+                        <blockquote>
+                            <q>Simply the best. Better than all the rest.</q>
+                        </blockquote>
+                        
+                        <p class="testimonial-text">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success.</p>
+                        
+                        <div class="testimonial-author">
+                            <h3>Alexander sakura</h3>
+                            <p class="author-role">Digital Marketer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 3 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <a href="#" class="testimonial-image">
+                            <img src="assets/images/team3.jpg" alt="Portrait de John wilson">
+                        </a>
+                        
+                        <blockquote>
+                            <q>OMG! I cannot believe. It's Awesome</q>
+                        </blockquote>
+                        
+                        <p class="testimonial-text">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success.</p>
+                        
+                        <div class="testimonial-author">
+                            <h3>John wilson</h3>
+                            <p class="author-role">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 4 -->
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <a href="#" class="testimonial-image">
+                            <img src="assets/images/team4.jpg" alt="Portrait de Julia sakura">
+                        </a>
+                        
+                        <blockquote>
+                            <q>OMG! I cannot believe. It's Awesome</q>
+                        </blockquote>
+                        
+                        <p class="testimonial-text">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success.</p>
+                        
+                        <div class="testimonial-author">
+                            <h3>Julia sakura</h3>
+                            <p class="author-role">Digital Marketer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <!-- Conteneur principal du pied de page -->
+    <div>
+        <div>
+            <div>
+                <!-- Section de contact -->
+                <address>
+                    <h2>Contact</h2>
+                    <p>Lorem ipsum dolor sit amet elit. Velit beatae ullam dolore.</p>
+                    <ul>
+                        <li><a href="#">exemple@email.com</a></li>
+                        <li><a href="#">+(21) 255 989 8088</a></li>
+                    </ul>
+                    
+                    <!-- Navigation des réseaux sociaux -->
+                    <nav>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </nav>
+                </address>
+                
+                <!-- Navigation des recherches populaires -->
+                <nav>
+                    <h2>Recherches populaires</h2>
+                    <ul>
+                        <li><a href="#">Caractéristiques</a></li>
+                        <li><a href="#">Bureaux à louer</a></li>
+                        <li><a href="#">Dernières actualités</a></li>
+                        <li><a href="#">Bureaux à acheter</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Navigation des liens rapides -->
+                <nav>
+                    <h2>Liens rapides</h2>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Rejoindre l'équipe</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                        <li><a href="#">Communiqués</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Section d'abonnement à la newsletter -->
+                <section>
+                    <h2>Abonnez-vous à notre newsletter</h2>
+                    <p>Entrez votre email et recevez les dernières actualités.</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Votre adresse email" required>
+                        <button type="submit">Envoyer</button>
+                    </form>
                 </section>
             </div>
-        </body>
-        </html>
+        </div>
+        
+        <!-- Section du copyright -->
+        <div>
+            <small>© 2020 Estates. Tous droits réservés | Conçu par <a href="#">W3layouts</a></small>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

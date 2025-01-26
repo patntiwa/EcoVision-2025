@@ -36,6 +36,103 @@
     
 }
 
+/* === Barre de navigation === */
+.navbar {
+    width: 90%;
+    display: flex;  /* Alignement horizontal des éléments */
+    /* justify-content: space-between; Espacement entre les éléments */
+    align-items: center; /* Centrage vertical */
+    padding: 20px 0;
+}
+
+/* === Menu de navigation === */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none; /* Suppression des puces de liste */
+    display: flex; /* Alignement horizontal des éléments */
+    gap: 30px; /* Espacement entre les éléments */
+    
+}
+
+.nav-item a {
+    text-decoration: none; /* Suppression du soulignement */
+    color: #333;  /* Couleur du texte */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Animation de changement de couleur */
+}
+
+.nav-item a:hover {
+    color: var(--primary-color); /* Changement de couleur au survol */
+}
+
+/* === Barre de recherche === */
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    padding: 10px 40px 10px 15px; /* Espacement interne */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 25px; /* Coins arrondis */
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('assets/Images/search-icon.png') no-repeat center;
+    background-size: cover;
+}
+
+/* === Bouton "Enquire Here" === */
+.btn-enquire {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-enquire:hover {
+    background-color:var(--bg-color); /* Changement de couleur au survol */
+}
+
+/* === Icône de mode nuit === */
+.theme-toggle img {
+    max-width: 30px;
+    cursor: pointer;
+}
+
+/* === Media Queries pour la réactivité === */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Alignement vertical en petit écran */
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+}
 .text-center{
     text-align: center;
 }
@@ -109,12 +206,10 @@ main{
 }
 .w-50{
     width: 50%;
-    border: 1px solid  var(--dark-color); 
 }
 
 .w-100{
     width: 100%;
-    border: 1px solid red;
 }
 .box-gap20{
     display: flex;
@@ -127,7 +222,14 @@ main{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
 }
-
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li span.fa {
+    color: var(--primary-color);
+}
 .card-padding{
     padding: 44px 25px 44px;
 }
