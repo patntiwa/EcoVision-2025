@@ -1,0 +1,365 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ header{
+    height: 67px;
+ }
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1440px;
+    height: 922px;
+}
+
+/* section 1 */
+.section1{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.partie1-section1{
+    margin-left: 75px;
+    margin-bottom: 35px;
+} 
+
+.partie1-section1 h6{
+    font-size: 16px;
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-left: 153px;
+    font-weight: bold;
+}
+
+.partie1-section1 h5{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0;
+    margin-right: 490px;
+    margin-left: 153px;
+    line-height: 1.4;
+    color: #000000;
+}
+
+.partie2-section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+    width: 1440px;
+    height: 508px;
+    gap: 60px;
+    margin-top: -60px;
+}
+
+.bloc1-section1{
+    display: flex;
+    margin-left: 136px;
+}
+
+.bloc1-section1 img{
+    width: 363px;
+    height: 245px;
+    border-radius: 10px;
+    margin-bottom: 90px;
+}
+
+
+.bloc2-section1{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: start;
+    background-color: brown;
+    width: 728px;
+    height: 508;
+}
+
+.top-image{
+    display: flex;
+    gap: 50px;
+}
+
+.top-image #img1{
+    height: 190px;
+    width: 280px;
+    border-radius: 8px;
+    padding-top: 0px;
+
+}
+
+.top-image #img2{
+    height: 150px;
+    width: 220px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: start;
+    justify-content: center;
+}
+
+.description p{
+    width: 710px;
+    height: 87px;
+    font-size: 18px;
+    padding-top: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+#read-more{
+    background-color: #FB5607 ;
+    height: 45px;
+    width: 160px;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    text-align: center;
+
+}
+
+
+/* fin section 1 */
+
+/* debut section 2 */
+.section2{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 1285px;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.partie1-section2{
+    text-align: center;
+    line-height: 10px;
+    height: auto;
+}
+
+.partie1-section2 h1{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.partie1-section2 h3{
+    font-size: 25px;
+    color: #007bff;
+    margin-top: 120px;
+}
+
+.partie2-section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 35px;
+    column-gap: 40px;
+    line-height: 2px;
+    font-family: Arial, sans-serif;
+}
+
+.partie2-section2 img{
+    height: 310px;
+    width: 470px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.partie2-section2 h6{
+    font-size: 12px;
+    color: gray;
+    margin-left: 24px;
+    margin-top: 30px;
+}
+
+.partie2-section2 h4{
+    font-size: 24px;
+    margin-left: 24px;
+}
+
+.button{
+    color: white;
+    background-color: #FB5607;
+    height: 45px;
+    width: 190px;
+    border-radius: 50px;
+    color: aliceblue;
+    border: none;
+    text-align: center;
+    margin-bottom: 85px;
+    margin-top: 10px;
+    cursor: pointer
+}
+
+
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    height: 800px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    
+}
+
+.partie1-section3 {
+    text-align: center;
+    line-height: 1.4;
+    
+}
+
+.partie1-section3 h6{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.partie1-section3 p{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.partie2-section3{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.bloc-section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 140px;
+    width: 300px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    margin: 0;
+
+}
+
+.icon-cercle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 50px;
+    background-color: #FB5607;
+    border-radius: 50%;
+}
+
+.icon-text{
+    display: flex;
+    gap: 18px;
+}
+
+
+.icon-text h1{
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.icon-text p{
+    font-size: 13px ;
+    color: rgb(71, 69, 69);
+    margin-top: 0;
+    margin-right: 24px; 
+    line-height: 1.5;
+}
+
+.icon-text img{
+    height: 30px;
+    width: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.section4{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+}
+
+
+.partie1-section4 img{
+    height: 240px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 120px;
+    margin-left: 160px;
+}
+
+.partie2-section4{
+    max-width: 600px;
+    margin-right: 70px;
+}
+
+.bloc1-section4 h6{
+    font-size: 14px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.bloc1-section4 h3{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.bloc1-section4 p{
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    margin-right: 80px;
+}
+
+.bloc2-section4{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.div1{
+    background-color: #f9f9f9;
+    text-align: left;
+    padding: 1px;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 15px);
+}
+
+.div1 h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.div1 p{
+    font-size: 14px;
+    color: #666;
+}
