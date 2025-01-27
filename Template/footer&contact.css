@@ -1,5 +1,73 @@
 /*--//contact--*/
 /*--/footer--*/
+
+
+.container-project {
+  border-bottom: 1px solid rgb(34 43 68 / 49%);
+  background: var(--footer-bg);
+}
+
+.container-project h3.title-big {
+  color: #fff;
+}
+
+.container-project p {
+  color: #eee;
+}
+
+.col{
+  position: relative;
+  width: 90%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.title-footer{
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.two {
+  color: #fff;
+}
+.mt-3,
+.my-3 {
+  margin-top: 1rem !important;
+}
+.pr-lg-5,
+  .px-lg-5 {
+    padding-right: 3rem !important;
+  }
+.row-footer {
+  display: flex;
+}
+/*-- //container --*/
+.btn-style {
+  padding: 12px 45px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  transition: 0.3s ease-in;
+  border-radius: var(--border-radius-full);
+}
+
+.btn-style.btn-white {
+  background: #fff;
+  color: var(--primary-color);
+}
+
+.btn-style.btn-white:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.transparent-btn {
+  background: rgba(255, 255, 255, 0.25);
+}
+/*Bouton*/
+
+
+/* Fin Bouton */
 .footer-17 .footer17_sur {
   background-color: var(--footer-bg);
 }
@@ -133,11 +201,17 @@
   color: #fff;
   transition: 0.3s ease-in-out;
 }
+.social a.twitter {
+  background: #1da1f2;
+}
 
+.social a.twitter span {
+  color: #fff;
+}
 .copyright {
   border-top: 1px solid rgb(34 43 68 / 49%);
-  padding-top: 2em;
-  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 /* //footer-17 */
