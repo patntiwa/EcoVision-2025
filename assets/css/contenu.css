@@ -1,6 +1,14 @@
 
 /* Titre et contenu */
 
+.date{
+    color: #7bd88a;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 0px;
+    font-size: 14px;
+
+}
 .titre-h1{
     margin-bottom:0px;
     width: 574px;
