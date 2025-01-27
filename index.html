@@ -222,11 +222,11 @@
         
         
         <!-- Section des articles de blog -->
-        <section class="Container">
-            <div class="row-blog">
-                <div class="blog-content">
+        <section class="container">
+            <div class="">
+                <div class="row w-90 m-auto">
                     <!-- Colonne de gauche avec article principal -->
-                    <div class="blog-main">
+                    <div class="blog-main" style="width: 30%;">
                         <h3 class="subtitle">Explore</h3>
                         <h2 class="title">Blog Posts</h2>
                         <p class="content-gray">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis.</p>
@@ -234,7 +234,7 @@
                         <!-- Article vedette -->
                         <div class="featured-article">
                             <a href="#">
-                                <img src="assets/images/g2.jpg" alt="Article vedette">
+                                <img src="assets/images/g2.jpg" alt="Article vedette" class="article-img img-fluid">
                             </a>
                             <div class="article-info">
                                 <time class="date">Dec 30, 2020</time>
@@ -249,11 +249,11 @@
                     <!-- Colonne de droite avec articles secondaires -->
                     <div class="blog-secondary">
                         <!-- Première rangée d'articles -->
-                        <div class="article-group">
+                        <div class="article-group" style="width: 30%;">
                             <!-- Article 1 -->
                             <article class="article">
                                 <a href="#">
-                                    <img src="assets/images/g3.jpg" alt="Article 1">
+                                    <img src="assets/images/g3.jpg" alt="Article 1" class="article-img img-fluid">
                                 </a>
                                 <div class="article-info">
                                     <time class="date">Dec 31, 2020</time>
@@ -266,7 +266,7 @@
                             
                             <!-- Article 2 -->
                             <article class="article">
-                                <img src="assets/images/g4.jpg" alt="Article 2">
+                                <img src="assets/images/g4.jpg" alt="Article 2" class="article-img img-fluid">
                                 <div class="article-info">
                                     <time class="date">Dec 31, 2020</time>
                                     <h4>
@@ -278,11 +278,11 @@
                         </div>
                         
                         <!-- Deuxième rangée d'articles -->
-                        <div class="article-group">
+                        <div class="article-group" style="width: 30%;">
                             <!-- Article 3 -->
                             <article class="article">
                                 <a href="#">
-                                    <img src="assets/images/g5.jpg" alt="Article 3">
+                                    <img src="assets/images/g5.jpg" alt="Article 3" class="article-img img-fluid">
                                 </a>
                                 <div class="article-info">
                                     <time class="date">Dec 31, 2020</time>
@@ -296,7 +296,7 @@
                             <!-- Article 4 -->
                             <article class="article">
                                 <a href="#">
-                                    <img src="assets/images/g1.jpg" alt="Article 4">
+                                    <img src="assets/images/g1.jpg" alt="Article 4" class="article-img img-fluid">
                                 </a>
                                 <div class="article-info">
                                     <time class="date">Dec 31, 2020</time>
@@ -421,20 +421,27 @@
                 <div class="testimonial text-center">
                     <div class="testimonial-content">
                         <a href="#" class="testimonial-image">
-                            <img src="assets/images/team1.jpg" alt="Portrait de Johnson william">
+                            <img src="assets/images/team1.jpg" alt="Portrait de Johnson william" class="Portrait">
                         </a>
                         
                         <blockquote>
+                            <i class="fa-solid fa-quote-left icone-quote"></i><br>
                             <q>OMG! I cannot believe. It's Awesome</q>
                         </blockquote>
                         
-                        <p class="testimonial-text">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success.</p>
+                        <p class="testimonial-text" style="padding-top: 20px;">My new site is so much faster and easier to work with than my old site. They are here to<br> help the customers to get their success. Nemo sit eos, quod minus eius illo labore. <br>Pellen tesque libero ut justo, ultrices in ligula.</p>
                         
-                        <div class="testimonial-author">
-                            <h3>Johnson william</h3>
-                            <p class="author-role">Web Developer</p>
+                        <div class="testimonial-author" style="padding-top: 20px;">
+                            <h3 class="auteur p-top">Johnson william</h3>
+                            <p class="author-role p-top">Web Developer</p>
                         </div>
                     </div>
+                </div>
+                <div class="owl-dots">
+                    <button role="button" class="owl-dot active"><span></span></button>
+                    <button role="button" class="owl-dot"><span></span></button>
+                    <button role="button" class="owl-dot"><span></span></button>
+                    <button role="button" class="owl-dot"><span></span></button>
                 </div>
             </div>
         </div>
@@ -447,80 +454,80 @@
             <div class="">
                 <div class="project-header">
                     <h2 class="text-left">Become a Real Estate Agent</h3>
-                    <p class="text-left">
-                        We only work with the best companies around the globe.
-                    </p>
+                        <p class="text-left">
+                            We only work with the best companies around the globe.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-lg-end mt-lg-0 mt-md-5 mt-4">
+                    <a href="#get" class="btn btn-primary">
+                        Join Now <span class="fa fa-arrow-right ml-3"></span>
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-4 d-flex align-items-center justify-content-lg-end mt-lg-0 mt-md-5 mt-4">
-                <a href="#get" class="btn btn-primary">
-                    Join Now <span class="fa fa-arrow-right ml-3"></span>
-                </a>
-            </div>
         </div>
-    </div>
-</section>      
-<footer class="container bgfooter">
-    <div class="w-90 m-auto">
-        <div class="row">
-            <div class="footer-top">
-                <div class="footer-top-left">
-                    <h6>Contact</h6>
-                    <ul>
-                        <li><a href="mailto:exemple@email.com">exemple@email.com</a></li>
-                        <li><a href="tel:+212559898088">+(21) 255 989 8088</a></li>
-                    </ul>
+    </section>      
+    <footer class="container bgfooter">
+        <div class="w-90 m-auto">
+            <div class="row">
+                <div class="footer-top">
+                    <div class="footer-top-left">
+                        <h6>Contact</h6>
+                        <ul>
+                            <li><a href="mailto:exemple@email.com">exemple@email.com</a></li>
+                            <li><a href="tel:+212559898088">+(21) 255 989 8088</a></li>
+                        </ul>
+                        <div>
+                            <h6>Réseaux sociaux</h6>
+                            <nav>
+                                <ul class="footers_social">
+                                    <li><a href="#"><span class="fa-brands fa-twitter"></span></a></li>
+                                    <li><a href="#"><span class="fa-brands fa-facebook-f"></span></a></li>
+                                    <li><a href="#"><span class="fa-brands fa-linkedin"></span></a></li>
+                                    <li><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    
                     <div>
-                        <h6>Réseaux sociaux</h6>
+                        <h6>Popular Searches</h6>
                         <nav>
-                            <ul class="footers_social">
-                                <li><a href="#"><span class="fa-brands fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fa-brands fa-facebook-f"></span></a></li>
-                                <li><a href="#"><span class="fa-brands fa-linkedin"></span></a></li>
-                                <li><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
+                            <ul>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Offices For Rent</a></li>
+                                <li><a href="#">lastest News</a></li>
+                                <li><a href="#">Offices For Buy</a></li>
+                                <li><a href="#">Support</a></li>
                             </ul>
                         </nav>
                     </div>
-                </div>
-    
-                <div>
-                    <h6>Popular Searches</h6>
-                    <nav>
-                        <ul>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Offices For Rent</a></li>
-                            <li><a href="#">lastest News</a></li>
-                            <li><a href="#">Offices For Buy</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div>
-                    <h6>Quick links</h6>
-                    <nav>
-                        <ul class="footers_social">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Join Our team</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Press release</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="subscribe">
-                    <h6>Subscribe To Our Newsletter</h6>
-                    <p>Enter your email and receive the latest news from us.</p>
-                    <form>
-                        <input type="email" name="email" placeholder="Votre email" required>
-                        <button type="submit" class="button"><span class="fa fa-paper-plane"></span></button>
-                    </form>
+                    <div>
+                        <h6>Quick links</h6>
+                        <nav>
+                            <ul class="footers_social">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Join Our team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Press release</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="subscribe">
+                        <h6>Subscribe To Our Newsletter</h6>
+                        <p>Enter your email and receive the latest news from us.</p>
+                        <form>
+                            <input type="email" name="email" placeholder="Votre email" required>
+                            <button type="submit" class="button"><span class="fa fa-paper-plane"></span></button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="copyright text-center" style="padding-bottom: 20px;">
-        <p>&copy; 2025 EcoVision. Tous droits réservés.</p>
-    </div>
-</footer>
+        <div class="copyright text-center" style="padding-bottom: 20px;">
+            <p>&copy; 2025 EcoVision. Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
