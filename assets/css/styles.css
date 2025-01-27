@@ -165,7 +165,10 @@ ul {
 .cl-org {
     color: var(--primary-color);
 }
-
+img {
+    vertical-align: middle;
+    border-style: none;
+}
 /* Bouton */
 .btn{
     padding: 20px 46px;
@@ -313,12 +316,17 @@ ul {
 /* === Carousel === */
 .carousel-container{
     padding-top: 30px;
+    width: 100%;
+    z-index: 1;
+    display: inline-flex;
+    position: relative;
 }
 
 .carousel-track{
     display: flex;
+    gap: 30px;
     position: relative;
-    gap: 20px;
+    overflow: hidden;
 }
 .carousel-dots{
     margin-top: 0px;
@@ -329,28 +337,53 @@ ul {
     bottom: -50px;
 }
 .dot{
-    display: inline-block;
-    zoom: 1;
-    background:#00000000;
+    zoom: 4;
 }
 .icon-inline{
     display: inline-flex;
     gap: 10px;
 }
+/*==Section Blog==*/
+.row-blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.blog-main{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.blog-content{
+    display: flex;
+}
+/*== Section des statistiques ==*/
 
-/*== Statistique section ==*/
+.statistics {
+    border-top: 1px solid #eee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .justify-content-center {
     justify-content: center !important;
 }
-.statistic-row{
-display: flex;
-}
-.statistics-grid{
-display: inline-flex;
-gap:30px;;
-}
-.statistics-col{
 
+.col-lg-3 {
+    flex: 0 0 20%;
+    max-width: 25%;
+}
+.statistic-value{
+    font-size: 50px;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+.mb-0{
+    margin-bottom: 0px !important;
+}
+.statistic-label{
+    font-size: 18px;
+    color: var(--font-color);
+    font-weight: 600;
 }
 .titre-card{
     color: black;
