@@ -35,7 +35,9 @@
 .nav-item a:hover {
     color: var(--primary-color); /* Changement de couleur au survol */
 }
-
+.active{
+    color: var(--primary-color);
+}
 /* === Barre de recherche === */
 .search-bar {
     position: relative;
