@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemples de Positionnement CSS</title>
+    <style>
+        /* Styles généraux pour les conteneurs */
+        .container {
+            border: 1px solid #ccc;
+            margin: 20px;
+            padding: 20px;
+            height: 200px;
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+        }
+
+        /* Positionnement statique (par défaut) */
+        .static {
+            /* position: static; est implicite */
+        }
+
+        /* Positionnement relatif */
+        .relative {
+            position: relative;
+            /* top: 120px;
+            left: 20px; */
+        }
+
+        /* Positionnement absolu */
+        .absolute {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        /* Positionnement fixe */
+        .fixed {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Positionnement sticky */
+        .sticky {
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 0;
+            background-color: lightgreen;
+            padding: 50px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemples de Positionnement CSS</h1>
+
+    <!-- Positionnement statique -->
+    <section>
+        <h2>Positionnement statique (static)</h2>
+        <div class="container">
+            <div class="box static">Statique</div>
+            <p>Le positionnement par défaut. L'élément suit le flux normal du document.</p>
+        </div>
+    </section>
+
+    <!-- Positionnement relatif -->
+    <section>
+        <h2>Positionnement relatif (relative)</h2>
+        <div class="container">
+            <div class="box relative">Relatif</div>
+            <p>L'élément est décalé par rapport à sa position initiale sans affecter le flux des autres éléments.</p>
+        </div>
+    </section>
+
+    <!-- Positionnement absolu -->
+    <section>
+        <h2>Positionnement absolu (absolute)</h2>
+        <div class="container">
+            <div class="box absolute">Absolu</div>
+            <p>L'élément est retiré du flux normal et positionné par rapport à son ancêtre positionné le plus proche.</p>
+        </div>
+    </section>
+
+    <!-- Positionnement fixe -->
+    <section>
+        <h2>Positionnement fixe (fixed)</h2>
+        <div class="container">
+            <div class="box fixed">Fixe</div>
+            <p>L'élément est retiré du flux normal et positionné par rapport à la fenêtre du navigateur. Il reste fixe lors du défilement.</p>
+        </div>
+    </section>
+
+    <!-- Positionnement sticky -->
+    <section>
+        <h2>Positionnement sticky (sticky)</h2>
+        <div class="container">
+            <div class="sticky">Sticky</div>
+            <p>L'élément se comporte comme un élément positionné relativement jusqu'à ce qu'il atteigne une position définie, puis il se comporte comme un élément positionné de façon fixe.</p>
+            <p>Faites défiler cette section pour voir l'effet sticky en action.</p>
+            <p style="height: 800px;">Contenu supplémentaire pour activer le défilement...</p>
+        </div>
+    </section>
+
+</body>
+</html>
