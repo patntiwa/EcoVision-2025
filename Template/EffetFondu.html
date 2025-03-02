@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Fondu</title>
+    <style>
+
+        body {
+            background: rgb(255, 0, 0);
+            background-size: 400% 400%;
+            animation: gradientAnimation 20s infinite;
+        }
+        .container{
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            width: 100%;
+            justify-content: center;
+            height: 100%;
+            transition:20s ease-in-out
+        }
+        @keyframes gradientAnimation {
+            0% { 
+                background: linear-gradient(to right,rgb(255, 0, 0),rgba(255, 0, 0,0.1));
+             }
+            25% { 
+                background: linear-gradient(to right,rgb(255, 0, 0),rgba(255, 0, 0,0.3));
+                opacity: 0.25;
+             }
+            50% { background: linear-gradient(to right,rgb(255, 0, 0),rgba(255, 0, 0,0.5)); 
+                  opacity: 0.5;
+            }
+            75% { 
+                background: linear-gradient(to right,rgb(255, 0, 0),rgba(255, 0, 0,0.7)); 
+                opacity: 0.75;}
+            100% { 
+                background: linear-gradient(to right,rgb(255, 0, 0),rgba(255, 0, 0,0.9));
+                opacity: 1;
+             }
+        }
+        .Classp{
+            font-size: 25px;
+            text-transform: uppercase;
+            text-align: center;
+            color: black;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+</body>
+</html>
